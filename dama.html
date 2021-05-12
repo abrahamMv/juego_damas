@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" manifest="script/damas.manifest">
+	<head>
+		<meta charset="UTF-8">
+		<title>juego de damas</title>
+		<link rel="stylesheet" href="estilos/estilos.css">
+		<script src="script/juego.js"></script>
+	</head>
+	<body>
+		<h1>JUEGO DE DAMAS</h1>
+		<p id="movimientos">Movimientos: <span id="count">0</span></p>
+		<p id="esTurno">Empiezan las Blancas: </p>
+		<canvas class="tablero" id="lienzo" width="600" height="300" ></canvas>
+		<br><br>
+	
+		<div id="moveBlancas"></div>
+		<div id="moveNegras"></div>
+		<script>
+			iniciarJuego(document.getElementById('lienzo'), document.getElementById('count'));
+		</script>		
+	</body>
+</html>
